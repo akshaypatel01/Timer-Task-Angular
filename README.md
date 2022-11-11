@@ -24,6 +24,10 @@ Small Time-Tracking Demo Application.
   - After completing the clone, open the terminal inside application folder.
   - Run command in your terminal <b> npm install</b> and wait untill download the all dependecy.
   - And Last run command <b> ng serve </b>. 
+
+# demo GIF
+
+![]([https://github.com/Your_Repository_Name](https://github.com/akshaypatel01/Timer-Task-Angular/demo-app.gif)
   
  
   
