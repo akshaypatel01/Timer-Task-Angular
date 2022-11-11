@@ -27,7 +27,7 @@ Small Time-Tracking Demo Application.
 
 # demo GIF
 
-![]([https://github.com/Your_Repository_Name](https://github.com/akshaypatel01/Timer-Task-Angular/demo-app.gif)
+![](https://github.com/akshaypatel01/Timer-Task-Angular/demo-app.gif)
   
  
   
