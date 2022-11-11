@@ -1,0 +1,29 @@
+<div class="container">
+    <h1 style="text-align: center;color: rgb(2, 134, 22); font-weight: 500;">
+        Timer Section
+    </h1>
+
+    <div class="col-sm-12" style="text-align: center;">
+        <h1 style="font-weight: 500; font-size: 44px;">Time : {{ taskTime | customtime }}</h1>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-4">
+            <button type="button" class="btn btn-primary btn-width" (click)="startTimer()"
+                [disabled]="!disabled">Start</button>
+        </div>
+        <div class="col-sm-4">
+            <button type="button" class="btn btn-warning  btn-width " (click)="pauseTimer()"
+                [disabled]="disabled">Pause</button>
+        </div>
+        <div class="col-sm-4">
+            <button type="button" class="btn btn-success btn-width" (click)="openDailog()"
+                [disabled]="disabled">Save</button>
+        </div>
+
+
+    </div>
+    <br>
+
+
+</div>

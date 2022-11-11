@@ -1,0 +1,11 @@
+.btn-width{
+    width: -webkit-fill-available;
+}
+tr{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+td{
+    padding-top: 15px;
+}

@@ -1,0 +1,48 @@
+<h2 style="text-align: center;">Task Details</h2>
+
+
+    <form #taskForm="ngForm">
+        <div class="row">
+    
+            <div class="col-sm-12">
+                <input type="text" class="form-control" placeholder="Enter Task Title" name="title"
+                    [(ngModel)]="taskData.title" #title="ngModel" [value]="title" required [disabled]="disabled">
+            </div>
+        </div>
+        <div class="row" *ngIf="title.invalid && title.touched">
+            <div class="col-sm-8">
+                <span style="color: rgb(181, 25, 25);">Title is required</span>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+           
+            <div class="col-sm-12">
+                <input type="text" class="form-control" placeholder="Enter Task Descriptions" name="description"
+                    #description="ngModel" required [(ngModel)]="taskData.description" [value]="description" [disabled]="disabled">
+            </div>
+        </div>
+        <div class="row" *ngIf="description.invalid && description.touched">
+    
+            <div class="col-sm-12">
+                <span style="color: rgb(181, 25, 25);">description is required</span>
+    
+            </div>
+        </div>
+    
+        <br>
+        <div class="row">
+    
+            <div class="col-sm-6" style="align-items: centre;">
+                <button class="btn btn-danger btn-width" (click)="cancelTask()">Cancel</button>
+            </div>
+            <div class="col-sm-6" style="align-items: centre;">
+                <button class="btn btn-success btn-width" (click)="onSubmit()"
+                    [disabled]="taskForm.invalid || disabled" >{{btnName}}</button>
+            </div>
+        </div>
+    
+    </form>
+
+
+

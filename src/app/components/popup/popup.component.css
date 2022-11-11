@@ -1,0 +1,6 @@
+.custom-card {
+    max-width: 500px;
+  }
+  .btn-width{
+    width: -webkit-fill-available;
+}
